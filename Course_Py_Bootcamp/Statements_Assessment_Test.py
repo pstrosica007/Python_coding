@@ -1,8 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# 1
-
+# Print only the words that start with s in this sentence
 
 st = 'Print only the words that start with s in this sentence'
 for word in st.split():
