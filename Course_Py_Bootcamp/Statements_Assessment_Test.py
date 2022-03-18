@@ -7,7 +7,13 @@ st = 'Print only the words that start with s in this sentence'
 for word in st.split():
     if word[0]=='s':
      print(word)
-
+    
+st = 'Sam Print only the words that start with s in this sentence'
+for word in st.split():
+    # if word[0]=='s' or word[0]=='S':
+   if word[0].lower() == 's': 
+    # print Sam, start, s, sentence...so include word with S
+    print(word)
 
 # Use range() to print all the even numbers from 0 to 10
 
@@ -32,8 +38,9 @@ for word in st.split():
 # Write a program that prints the integers from 1 to 100. But for multiples of three print "Fizz" instead of the number, 
 # and for the multiples of five print "Buzz". For numbers which are multiples of both three and five print "FizzBuzz"
 
-
+#range(a,b+1) cause it will end with 99 in this case and we do not want it..
 for num in range(1,101):
+    # multiple three and five are also three of five, so let's go with three and five first
     if num%3==0 and num%5==0:
         print(num," FizzBizz")
     elif num%3==0:
